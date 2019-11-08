@@ -1,14 +1,16 @@
-### Matías Grinberg
+```python
+from entropy.local_minimizers import Matías Grinberg" 
+```
 
-<div style="font-size:20px">
-Hola! Soy un estudiante investigador en "Neurociencias Computacionales"... o al menos algo así suelo decir para resumir &#128517; .
+Hola! Soy un estudiante investigador en "Neurociencias Computacionales"... o al menos algo así suelo decir para resumir &#128517;.  
 
-Mis intereses radican en la intersección de las neurociencias cognitivas con la inteligencia artificial. Hace varios años que me desempeño como Data Scientist en ámbitos académicos e industriales.
+Mis intereses radican en la intersección de las neurociencias cognitivas con la inteligencia artificial. Hace varios años que me desempeño como Data Scientist en ámbitos académicos e industriales.  
+  
+En mi tiempo libre desarrollo proyectos personales, toco instrumentos, y dejo que mi curiosidad dicte mi camino.  
+  
+Este sitio esta **en construcción**! Lo mejor está por venir... &#128521;  
 
-En mi tiempo libre desarrollo proyectos personales, toco instrumentos, y dejo que mi curiosidad dicte mi camino.
+Gracias por el interés y muchos éxitos, estimado lector!  
 
-Este sitio esta **en construcción**! Lo mejor está por venir... &#128521;
+Mati
 
-Gracias por el interés y muchos éxitos, estimado lector!
-Matías
-</div>
