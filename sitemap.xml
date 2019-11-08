@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://cerebrock.github.io/</loc>
-  <lastmod>2019-11-08T03:35:00Z</lastmod>
+  <lastmod>2019-11-08T04:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://cerebrock.github.io/2017/</loc>
@@ -16,6 +16,14 @@
  <url>
   <loc>https://cerebrock.github.io/archive.html</loc>
   <lastmod>2019-11-08T04:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://cerebrock.github.io/archive/</loc>
+  <lastmod>2019-11-08T04:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://cerebrock.github.io/archive/2017/</loc>
+  <lastmod>2019-11-08T04:20:00Z</lastmod>
  </url>
  <url>
   <loc>https://cerebrock.github.io/categories/</loc>
