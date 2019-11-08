@@ -1,7 +1,7 @@
 ### Matías Grinberg
 
 <div style="font-size:20px">
-Hola! Soy un estudiante investigador en "Neurociencias Computacionales"... o al menos algo así suelo decir para resumir &#128517; </div>.
+Hola! Soy un estudiante investigador en "Neurociencias Computacionales"... o al menos algo así suelo decir para resumir &#128517; .
 
 Mis intereses radican en la intersección de las neurociencias cognitivas con la inteligencia artificial. Hace varios años que me desempeño como Data Scientist en ámbitos académicos e industriales.
 
@@ -11,4 +11,4 @@ Este sitio esta **en construcción**! Lo mejor está por venir... &#128521;
 
 Gracias por el interés y muchos éxitos, estimado lector!
 Matías
-</p>
+</div>
