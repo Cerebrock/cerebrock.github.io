@@ -64,11 +64,19 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Data-Science-in-Psychology">Data Science in Psychology<a class="anchor-link" href="posts/Vocational%20Data%20Science/#Data-Science-in-Psychology">¶</a>
+<h4 id="Holla(nd)-mundo!">Holla(nd) mundo!<a class="anchor-link" href="posts/Vocational%20Data%20Science/#Holla(nd)-mundo!">¶</a>
 </h4>
+<p>The Holland Occupational Themes is a theory of personality that focuses on career and vocational choice. It characterizes people on the basis of their affinity for six different categories of occupations. The six types yield the RIASEC acronym, by which the theory is also commonly known. The typology has come to dominate the field of career counseling and has been incorporated into most of the popular assessments used in the field.</p>
 <ul>
-<li>In this .ipynb we use Python to gather, analyse and explore the results from a widely used vocational test (Holland)</li>
+<li>In this .ipynb:<ul>
+<li>Loading of example data</li>
+<li>Minimal exploration with pandas</li>
+<li>Result dashboard with plotly</li>
 </ul>
+</li>
+</ul>
+<p>You can take the test online in: <a href="https://openpsychometrics.org/tests/RIASEC/">https://openpsychometrics.org/tests/RIASEC/</a></p>
+
 </div>
 </div>
 </div>
@@ -94,9 +102,8 @@
 <div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># My answers</span>
-<span class="n">circuladas</span> <span class="o">=</span> <span class="s1">'1,2,3,4,8,9,10,13,14,15,16,19,20,22,23,24,25,26,27,28,29,30,31,32,33,34,43,44,45,46,47,51,52,53,56,57,58,61,62,63,68,70,71,73,74,75,79,81,87,89,90'</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">','</span><span class="p">)</span>
-<span class="n">categorias</span> <span class="o">=</span> <span class="s1">'R,I,A,S,E,C'</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">','</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="n">circuladas</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">cat</span><span class="p">:</span> <span class="nb">len</span><span class="p">([</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">circuladas</span> <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">categorias</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">cat</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">6</span><span class="p">)]])</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">categorias</span><span class="p">}</span>
 </pre></div>
 
     </div>
@@ -109,7 +116,8 @@
 <div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">puntajes</span> <span class="o">=</span> <span class="p">{</span><span class="n">cat</span><span class="p">:</span> <span class="nb">len</span><span class="p">([</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">circuladas</span> <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">categorias</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">cat</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">6</span><span class="p">)]])</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">categorias</span><span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">categorias</span> <span class="o">=</span> <span class="s1">'R,I,A,S,E,C'</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">','</span><span class="p">)</span>
+<span class="n">circuladas</span> <span class="o">=</span> <span class="s1">'1,2,3,4,8,9,10,13,14,15,16,19,20,22,23,24,25,26,27,28,29,30,31,32,33,34,43,44,45,46,47,51,52,53,56,57,58,61,62,63,68,70,71,73,74,75,79,81,87,89,90'</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">','</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -122,7 +130,7 @@
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">puntajes</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">score</span><span class="p">(</span><span class="n">circuladas</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -176,6 +184,7 @@
 <i class="fa fa-tags"></i> Tags:</h3>
         <ul itemprop="keywords" class="tags-ul">
 <li><a class="tag p-category" href="categories/audio/" rel="tag">audio</a></li>
+            <li><a class="tag p-category" href="categories/espanol/" rel="tag">español</a></li>
         </ul>
 </div>
 
@@ -187,7 +196,7 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="En-esta-notebook-sencilla...">En esta notebook sencilla...<a class="anchor-link" href="posts/Some%20audio%20viz/#En-esta-notebook-sencilla...">¶</a>
+<h4 id="Audio-simple">Audio simple<a class="anchor-link" href="posts/Some%20audio%20viz/#Audio-simple">¶</a>
 </h4>
 <ul>
 <li>Grabamos una muestra de audio con el micrófono de la PC y la pasamos al dominio de frecuencias, usando Fourier, STFT (Short-Time Fourier Transform), y Welch.</li>

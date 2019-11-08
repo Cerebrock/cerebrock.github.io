@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Musical Neuron (Posts about audio)</title><link>https://cerebrock.github.io/</link><description></description><atom:link href="https://cerebrock.github.io/categories/audio.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:mtsgrinberg@gmail.com"&gt;Matías Grinberg&lt;/a&gt; </copyright><lastBuildDate>Fri, 08 Nov 2019 17:36:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spectral Playground</title><link>https://cerebrock.github.io/posts/Some%20audio%20viz/</link><dc:creator>MG</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Musical Neuron (Posts about audio)</title><link>https://cerebrock.github.io/</link><description></description><atom:link href="https://cerebrock.github.io/categories/audio.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:mtsgrinberg@gmail.com"&gt;Matías Grinberg&lt;/a&gt; </copyright><lastBuildDate>Fri, 08 Nov 2019 20:11:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spectral Playground</title><link>https://cerebrock.github.io/posts/Some%20audio%20viz/</link><dc:creator>MG</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="En-esta-notebook-sencilla..."&gt;En esta notebook sencilla...&lt;a class="anchor-link" href="https://cerebrock.github.io/posts/Some%20audio%20viz/#En-esta-notebook-sencilla..."&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;h4 id="Audio-simple"&gt;Audio simple&lt;a class="anchor-link" href="https://cerebrock.github.io/posts/Some%20audio%20viz/#Audio-simple"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;Grabamos una muestra de audio con el micrófono de la PC y la pasamos al dominio de frecuencias, usando Fourier, STFT (Short-Time Fourier Transform), y Welch.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -181,4 +181,4 @@ Audio recording complete.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/div&gt;</description><category>audio</category><guid>https://cerebrock.github.io/posts/Some%20audio%20viz/</guid><pubDate>Sun, 01 Jan 2017 03:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>audio</category><category>español</category><guid>https://cerebrock.github.io/posts/Some%20audio%20viz/</guid><pubDate>Sun, 01 Jan 2017 03:00:00 GMT</pubDate></item></channel></rss>
