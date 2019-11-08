@@ -1565,10 +1565,14 @@ pre.code {
 .backlink + h1.title {
   margin-top: 0;
 }
+
 article.post-text h1.entry-title {
   text-align: center;
-  margin: 12px 0;
+  margin-top: 0px 0;
+  font-size: 200%;
+  margin-bottom: 24px;
 }
+
 article.post-text h1.entry-title a {
   color: inherit;
 }
@@ -1606,7 +1610,8 @@ article.post-text .metadata .commentline {
   float: right !important;
 }
 article.post-text .metadata p {
-  margin: 0;
+  margin-left: 2px;
+  margin-right: 2px;
   display: inline-block;
   color: #999;
 }
@@ -1630,8 +1635,11 @@ article.post-text .metadata h3 {
 }
 article.post-text .metadata .tags {
   clear: both;
-  display: none;
-  opacity: 0.3;
+  font-size: 100%;
+  margin-left: 3px;
+  margin-right: 0px;
+  display: inline-block;
+  opacity: 0.2;
   filter: alpha(opacity=20);
   -webkit-transition: opacity 0.1s linear;
   -moz-transition: opacity 0.1s linear;
@@ -1652,7 +1660,8 @@ article.post-text .metadata .tags ul > li {
   *display: inline;
   /* IE7 inline-block hack */
   *zoom: 1;
-  margin-right: 10px;
+  margin-right: 2px;
+  margin-left: 2px;
 }
 article.post-text .entry-content {
   margin-bottom: 36px;
