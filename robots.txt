@@ -1,0 +1,4 @@
+Sitemap: https://cerebrock.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: cerebrock.github.io
