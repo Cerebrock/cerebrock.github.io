@@ -6,15 +6,43 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://cerebrock.github.io/categories/audio.xml</loc>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://cerebrock.github.io/categories/clinical.xml</loc>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://cerebrock.github.io/categories/fourier.xml</loc>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://cerebrock.github.io/categories/jupyter.xml</loc>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://cerebrock.github.io/categories/music.xml</loc>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://cerebrock.github.io/categories/plotly.xml</loc>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://cerebrock.github.io/categories/psychology.xml</loc>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://cerebrock.github.io/galleries/rss.xml</loc>
-  <lastmod>2019-11-08T06:39:00Z</lastmod>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/rss.xml</loc>
-  <lastmod>2019-11-08T06:42:00Z</lastmod>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/sitemap.xml</loc>
-  <lastmod>2019-11-08T06:42:00Z</lastmod>
+  <lastmod>2019-11-08T17:34:00Z</lastmod>
  </sitemap>
 </sitemapindex>
