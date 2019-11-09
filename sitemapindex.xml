@@ -11,11 +11,15 @@
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/audio.xml</loc>
-  <lastmod>2019-11-09T06:16:00Z</lastmod>
+  <lastmod>2019-11-09T06:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/espanol.xml</loc>
-  <lastmod>2019-11-09T06:16:00Z</lastmod>
+  <lastmod>2019-11-09T06:50:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://cerebrock.github.io/categories/music.xml</loc>
+  <lastmod>2019-11-09T06:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/psychology.xml</loc>
@@ -23,14 +27,14 @@
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/galleries/rss.xml</loc>
-  <lastmod>2019-11-08T20:28:00Z</lastmod>
+  <lastmod>2019-11-09T06:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/rss.xml</loc>
-  <lastmod>2019-11-09T06:16:00Z</lastmod>
+  <lastmod>2019-11-09T06:50:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/sitemap.xml</loc>
-  <lastmod>2019-11-09T06:16:00Z</lastmod>
+  <lastmod>2019-11-09T06:50:00Z</lastmod>
  </sitemap>
 </sitemapindex>
