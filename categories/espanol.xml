@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Musical Neuron (Posts about español)</title><link>https://cerebrock.github.io/</link><description></description><atom:link href="https://cerebrock.github.io/categories/espanol.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:mtsgrinberg@gmail.com"&gt;Matías Grinberg&lt;/a&gt; </copyright><lastBuildDate>Sat, 09 Nov 2019 06:16:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spectral Playground</title><link>https://cerebrock.github.io/posts/Some%20audio%20viz/</link><dc:creator>MG</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Musical Neuron (Posts about español)</title><link>https://cerebrock.github.io/</link><description></description><atom:link href="https://cerebrock.github.io/categories/espanol.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:mtsgrinberg@gmail.com"&gt;Matías Grinberg&lt;/a&gt; </copyright><lastBuildDate>Sat, 09 Nov 2019 06:28:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spectral Playground</title><link>https://cerebrock.github.io/posts/Some%20audio%20viz/</link><dc:creator>MG</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Audio-simple"&gt;Audio simple&lt;a class="anchor-link" href="https://cerebrock.github.io/posts/Some%20audio%20viz/#Audio-simple"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Grabamos una muestra de audio con el micrófono de la PC y la pasamos al dominio de frecuencias, usando Fourier, STFT (Short-Time Fourier Transform), y Welch.&lt;/li&gt;
+&lt;h4 id="Bach-to-business"&gt;Bach to business&lt;a class="anchor-link" href="https://cerebrock.github.io/posts/Some%20audio%20viz/#Bach-to-business"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Grabamos una muestra de audio con el micrófono incorporado&lt;/li&gt;
+&lt;li&gt;Ploteamos en el dominio de tiempo, frequencias usando Fourier, y en tiempo/frecuencias con Short-Time Fourier Transform&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
@@ -107,8 +108,8 @@ Audio recording complete.
 &lt;p&gt;Con un poco de atención, podemos observar, del gráfico superior al inferior:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;El vibrato de la flauta&lt;/li&gt;
-&lt;li&gt;El tono de la obra&lt;/li&gt;
-&lt;li&gt;La melodía&lt;/li&gt;
+&lt;li&gt;El tono de la obra (C#, &lt;em&gt;Prélude à l'après-midi d'un faune&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;La melodía &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;😃🤟&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;Oops! &lt;a href="https://www.youtube.com/watch?v=vabZ4H1NCeQ"&gt;https://www.youtube.com/watch?v=vabZ4H1NCeQ&lt;/a&gt;&lt;/del&gt;&lt;/p&gt;
