@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Musical Neuron (Posts about audio)</title><link>https://cerebrock.github.io/</link><description></description><atom:link href="https://cerebrock.github.io/categories/audio.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:mtsgrinberg@gmail.com"&gt;Matías Grinberg&lt;/a&gt; </copyright><lastBuildDate>Fri, 08 Nov 2019 20:22:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spectral Playground</title><link>https://cerebrock.github.io/posts/Some%20audio%20viz/</link><dc:creator>MG</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Musical Neuron (Posts about audio)</title><link>https://cerebrock.github.io/</link><description></description><atom:link href="https://cerebrock.github.io/categories/audio.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:mtsgrinberg@gmail.com"&gt;Matías Grinberg&lt;/a&gt; </copyright><lastBuildDate>Sat, 09 Nov 2019 03:54:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spectral Playground</title><link>https://cerebrock.github.io/posts/Some%20audio%20viz/</link><dc:creator>MG</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h4 id="Audio-simple"&gt;Audio simple&lt;a class="anchor-link" href="https://cerebrock.github.io/posts/Some%20audio%20viz/#Audio-simple"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
@@ -11,10 +11,12 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;#Librería para grabar&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;conda install -c conda-forge python-sounddevice
+
+&lt;span class="c1"&gt;#Librería para grabar&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sounddevice&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;sd&lt;/span&gt;
 
 &lt;span class="c1"&gt;#Para reproducir audio en la Jupyter N.&lt;/span&gt;
@@ -28,8 +30,58 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;Collecting sounddevice
+  Downloading https://files.pythonhosted.org/packages/86/03/8a0a35f4862a5e6a611a81a5e4908f3c8488c012742c94e535f7db3959af/sounddevice-0.3.14-py2.py3-none-any.whl
+Requirement already satisfied: CFFI&amp;gt;=1.0 in /home/matias/anaconda3/lib/python3.7/site-packages (from sounddevice) (1.12.2)
+Requirement already satisfied: pycparser in /home/matias/anaconda3/lib/python3.7/site-packages (from CFFI&amp;gt;=1.0-&amp;gt;sounddevice) (2.19)
+Installing collected packages: sounddevice
+Successfully installed sounddevice-0.3.14
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_subarea output_text output_error"&gt;
+&lt;pre&gt;
+&lt;span class="ansi-red-fg"&gt;---------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="ansi-red-fg"&gt;OSError&lt;/span&gt;                                   Traceback (most recent call last)
+&lt;span class="ansi-green-fg"&gt;&amp;lt;ipython-input-5-1695999cdbfd&amp;gt;&lt;/span&gt; in &lt;span class="ansi-cyan-fg"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;
+&lt;span class="ansi-green-intense-fg ansi-bold"&gt;      1&lt;/span&gt; get_ipython&lt;span class="ansi-blue-fg"&gt;(&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;)&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;.&lt;/span&gt;system&lt;span class="ansi-blue-fg"&gt;(&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;'pip install sounddevice'&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;)&lt;/span&gt;
+&lt;span class="ansi-green-intense-fg ansi-bold"&gt;      2&lt;/span&gt; &lt;span class="ansi-red-fg"&gt;#Librería para grabar&lt;/span&gt;
+&lt;span class="ansi-green-fg"&gt;----&amp;gt; 3&lt;/span&gt;&lt;span class="ansi-red-fg"&gt; &lt;/span&gt;&lt;span class="ansi-green-fg"&gt;import&lt;/span&gt; sounddevice &lt;span class="ansi-green-fg"&gt;as&lt;/span&gt; sd
+&lt;span class="ansi-green-intense-fg ansi-bold"&gt;      4&lt;/span&gt; 
+&lt;span class="ansi-green-intense-fg ansi-bold"&gt;      5&lt;/span&gt; &lt;span class="ansi-red-fg"&gt;#Para reproducir audio en la Jupyter N.&lt;/span&gt;
+
+&lt;span class="ansi-green-fg"&gt;~/anaconda3/lib/python3.7/site-packages/sounddevice.py&lt;/span&gt; in &lt;span class="ansi-cyan-fg"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;
+&lt;span class="ansi-green-intense-fg ansi-bold"&gt;     69&lt;/span&gt;             &lt;span class="ansi-green-fg"&gt;break&lt;/span&gt;
+&lt;span class="ansi-green-intense-fg ansi-bold"&gt;     70&lt;/span&gt;     &lt;span class="ansi-green-fg"&gt;else&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;:&lt;/span&gt;
+&lt;span class="ansi-green-fg"&gt;---&amp;gt; 71&lt;/span&gt;&lt;span class="ansi-red-fg"&gt;         &lt;/span&gt;&lt;span class="ansi-green-fg"&gt;raise&lt;/span&gt; OSError&lt;span class="ansi-blue-fg"&gt;(&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;'PortAudio library not found'&lt;/span&gt;&lt;span class="ansi-blue-fg"&gt;)&lt;/span&gt;
+&lt;span class="ansi-green-intense-fg ansi-bold"&gt;     72&lt;/span&gt;     _lib &lt;span class="ansi-blue-fg"&gt;=&lt;/span&gt; _ffi&lt;span class="ansi-blue-fg"&gt;.&lt;/span&gt;dlopen&lt;span class="ansi-blue-fg"&gt;(&lt;/span&gt;_libname&lt;span class="ansi-blue-fg"&gt;)&lt;/span&gt;
+&lt;span class="ansi-green-intense-fg ansi-bold"&gt;     73&lt;/span&gt; &lt;span class="ansi-green-fg"&gt;except&lt;/span&gt; OSError&lt;span class="ansi-blue-fg"&gt;:&lt;/span&gt;
+
+&lt;span class="ansi-red-fg"&gt;OSError&lt;/span&gt;: PortAudio library not found&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;a href="https://cerebrock.github.io/posts/Some%20audio%20viz/"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>audio</category><category>español</category><guid>https://cerebrock.github.io/posts/Some%20audio%20viz/</guid><pubDate>Sun, 01 Jan 2017 03:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="https://cerebrock.github.io/posts/Some%20audio%20viz/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>audio</category><category>español</category><guid>https://cerebrock.github.io/posts/Some%20audio%20viz/</guid><pubDate>Sun, 01 Jan 2017 03:00:00 GMT</pubDate></item></channel></rss>

@@ -29,10 +29,10 @@ Grabamos una muestra de audio con el micrófono de la PC y la pasamos al dominio
 
 
 
-In [1]:
+In [5]:
 
     
-#Librer">
+!conda ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-01-01T00:00:00-03:00">
 <meta property="article:tag" content="audio">
@@ -95,10 +95,12 @@ In [1]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Librería para grabar</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>conda install -c conda-forge python-sounddevice
+
+<span class="c1">#Librería para grabar</span>
 <span class="kn">import</span> <span class="nn">sounddevice</span> <span class="k">as</span> <span class="nn">sd</span>
 
 <span class="c1">#Para reproducir audio en la Jupyter N.</span>
@@ -109,6 +111,56 @@ In [1]:
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Collecting sounddevice
+  Downloading https://files.pythonhosted.org/packages/86/03/8a0a35f4862a5e6a611a81a5e4908f3c8488c012742c94e535f7db3959af/sounddevice-0.3.14-py2.py3-none-any.whl
+Requirement already satisfied: CFFI&gt;=1.0 in /home/matias/anaconda3/lib/python3.7/site-packages (from sounddevice) (1.12.2)
+Requirement already satisfied: pycparser in /home/matias/anaconda3/lib/python3.7/site-packages (from CFFI&gt;=1.0-&gt;sounddevice) (2.19)
+Installing collected packages: sounddevice
+Successfully installed sounddevice-0.3.14
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OSError</span>                                   Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-5-1695999cdbfd&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>system<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'pip install sounddevice'</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-red-fg">#Librería para grabar</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> sounddevice <span class="ansi-green-fg">as</span> sd
+<span class="ansi-green-intense-fg ansi-bold">      4</span> 
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-red-fg">#Para reproducir audio en la Jupyter N.</span>
+
+<span class="ansi-green-fg">~/anaconda3/lib/python3.7/site-packages/sounddevice.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     69</span>             <span class="ansi-green-fg">break</span>
+<span class="ansi-green-intense-fg ansi-bold">     70</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 71</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> OSError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'PortAudio library not found'</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     72</span>     _lib <span class="ansi-blue-fg">=</span> _ffi<span class="ansi-blue-fg">.</span>dlopen<span class="ansi-blue-fg">(</span>_libname<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     73</span> <span class="ansi-green-fg">except</span> OSError<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">OSError</span>: PortAudio library not found</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -124,7 +176,7 @@ In [1]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Herramientas numéricas</span>
@@ -145,7 +197,7 @@ In [1]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [2]:</div>
+<div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">grabar</span><span class="p">(</span><span class="n">sampleo</span> <span class="o">=</span> <span class="mi">44100</span><span class="p">,</span> <span class="n">duracion</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">play</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
@@ -170,7 +222,7 @@ In [1]:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [3]:</div>
+<div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_welch</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">canal</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
@@ -245,8 +297,6 @@ In [1]:
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Promedio los dos canales</span>
 <span class="n">rec0</span> <span class="o">=</span> <span class="n">grabar</span><span class="p">()</span>
 <span class="n">prom</span> <span class="o">=</span> <span class="p">(</span><span class="n">rec0</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">rec0</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="mi">2</span> 
-
-<span class="n">plot_multiple</span><span class="p">(</span><span class="n">prom</span><span class="p">)</span>
 </pre></div>
 
     </div>
