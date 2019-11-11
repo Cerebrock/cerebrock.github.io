@@ -20,12 +20,32 @@
 <meta property="og:site_name" content="Musical Neuron">
 <meta property="og:title" content="Spectral Playground">
 <meta property="og:url" content="https://cerebrock.github.io/posts/Some%20audio%20viz/">
-<meta property="og:description" content="Bach to business¶
-Grabamos una muestra de audio con el micrófono incorporado
-Ploteamos en el dominio de tiempo, frequencias usando Fourier, y en tiempo/frecuencias con Short-Time Fourier Transform
+<meta property="og:description" content="In [28]:
+
+    
+sampleo = 48000
+rec = grabar(duracion=15,
+             sampleo=sampleo)
+
+display(
+    Audio(
+        stereo2mono(
+            rec[sampleo:]), rate=sampleo
+    ) 
+)
+
+
+    
 
 
 
+
+
+
+
+
+
+    
 ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-01-01T00:00:00-03:00">
@@ -81,12 +101,7 @@ Ploteamos en el dominio de tiempo, frequencias usando Fourier, y en tiempo/frecu
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Bach-to-business">Bach to business<a class="anchor-link" href="../Some%20audio%20viz/#Bach-to-business">¶</a>
-</h4>
-<ul>
-<li>Grabamos una muestra de audio con el micrófono incorporado</li>
-<li>Ploteamos en el dominio de tiempo, frequencias usando Fourier, y en tiempo/frecuencias con Short-Time Fourier Transform</li>
-</ul>
+
 </div>
 </div>
 </div>
@@ -96,8 +111,15 @@ Ploteamos en el dominio de tiempo, frequencias usando Fourier, y en tiempo/frecu
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sampleo</span> <span class="o">=</span> <span class="mi">48000</span>
-<span class="n">rec</span> <span class="o">=</span> <span class="n">grabar</span><span class="p">(</span><span class="n">duracion</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">sampleo</span><span class="o">=</span><span class="n">sampleo</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Audio</span><span class="p">(</span><span class="n">stereo2mono</span><span class="p">(</span><span class="n">rec</span><span class="p">[</span><span class="n">sampleo</span><span class="p">:]),</span> <span class="n">rate</span><span class="o">=</span><span class="n">sampleo</span><span class="p">))</span>
+<span class="n">rec</span> <span class="o">=</span> <span class="n">grabar</span><span class="p">(</span><span class="n">duracion</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+             <span class="n">sampleo</span><span class="o">=</span><span class="n">sampleo</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span>
+    <span class="n">Audio</span><span class="p">(</span>
+        <span class="n">stereo2mono</span><span class="p">(</span>
+            <span class="n">rec</span><span class="p">[</span><span class="n">sampleo</span><span class="p">:]),</span> <span class="n">rate</span><span class="o">=</span><span class="n">sampleo</span>
+    <span class="p">)</span> 
+<span class="p">)</span>
 </pre></div>
 
     </div>
@@ -245,11 +267,15 @@ Audio recording complete.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [2]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">grabar</span><span class="p">(</span><span class="n">sampleo</span> <span class="o">=</span> <span class="mi">44100</span><span class="p">,</span> <span class="n">duracion</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">play</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
-    <span class="sd">'''Graba audio y devuelve la data como array de numpy.'''</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">grabar</span><span class="p">(</span><span class="n">sampleo</span> <span class="o">=</span> <span class="mi">44100</span><span class="p">,</span> 
+           <span class="n">duracion</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> 
+           <span class="n">play</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="sd">'''Graba audio y devuelve la data como array de numpy.</span>
+<span class="sd">    sampleo, hz</span>
+<span class="sd">    duracion en s'''</span>
     
     <span class="n">rec</span> <span class="o">=</span> <span class="n">sd</span><span class="o">.</span><span class="n">rec</span><span class="p">(</span><span class="n">duracion</span> <span class="o">*</span> <span class="n">sampleo</span><span class="p">,</span> <span class="n">samplerate</span><span class="o">=</span><span class="n">sampleo</span><span class="p">,</span> <span class="n">channels</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="s1">'float64'</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Recording Audio..."</span><span class="p">)</span>    
