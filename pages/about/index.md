@@ -1,6 +1,8 @@
 ```python
-from entropy.local_minimizers import Matías Grinberg" 
+from entropy.local_minimizers import Matías Grinberg 
 ```
+
+    
 
 Hola! Soy un estudiante investigador en "Neurociencias Computacionales"... o al menos algo así suelo decir para resumir &#128517;.  
 
