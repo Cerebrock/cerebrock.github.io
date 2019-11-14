@@ -949,7 +949,7 @@ section {
   }
 }
 .page-content > .content {
-  max-width: 890px;
+  max-width: 120px;
 }
 @media (min-width: 774px) and (max-width: 1047px) {
   .page-content > .content {

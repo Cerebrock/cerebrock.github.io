@@ -949,7 +949,7 @@ section {
   }
 }
 .page-content > .content {
-  max-width: 890px;
+  max-width: 120px;
 }
 @media (min-width: 774px) and (max-width: 1047px) {
   .page-content > .content {
@@ -1706,9 +1706,4 @@ article.post-text .entry-content .figure .caption {
 article.post-text + article.post-text {
   margin-top: 48px;
 }
-
-.more {
-  font-size: 125%;
-}
-
 
