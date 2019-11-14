@@ -14,16 +14,12 @@
   <lastmod>2019-11-08T06:42:00Z</lastmod>
  </url>
  <url>
-  <loc>https://cerebrock.github.io/archive/2017/</loc>
-  <lastmod>2019-11-08T04:20:00Z</lastmod>
- </url>
- <url>
   <loc>https://cerebrock.github.io/archive/2019/</loc>
   <lastmod>2019-11-08T06:42:00Z</lastmod>
  </url>
  <url>
   <loc>https://cerebrock.github.io/categories/</loc>
-  <lastmod>2019-11-09T06:50:00Z</lastmod>
+  <lastmod>2019-11-14T03:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://cerebrock.github.io/categories/applied/</loc>
@@ -32,6 +28,10 @@
  <url>
   <loc>https://cerebrock.github.io/categories/audio/</loc>
   <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://cerebrock.github.io/categories/business/</loc>
+  <lastmod>2019-11-14T03:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://cerebrock.github.io/categories/espanol/</loc>
@@ -44,6 +44,10 @@
  <url>
   <loc>https://cerebrock.github.io/categories/psychology/</loc>
   <lastmod>2019-11-08T17:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://cerebrock.github.io/categories/scraping/</loc>
+  <lastmod>2019-11-14T03:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://cerebrock.github.io/galleries/</loc>
@@ -64,5 +68,9 @@
  <url>
   <loc>https://cerebrock.github.io/posts/Vocational%20Data%20Science/</loc>
   <lastmod>2019-11-08T17:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://cerebrock.github.io/posts/sKaPIng/</loc>
+  <lastmod>2019-11-14T03:38:00Z</lastmod>
  </url>
 </urlset>

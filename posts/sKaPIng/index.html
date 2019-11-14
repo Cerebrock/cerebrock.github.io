@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html prefix="
+        og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+    " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Modern...ish Vocational Testing | Musical Neuron</title>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
+<link rel="canonical" href="https://cerebrock.github.io/posts/sKaPIng/">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script><script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script><meta name="author" content="MG">
+<link rel="next" href="../Some%20audio%20viz/" title="Spectral Playground" type="text/html">
+<meta property="og:site_name" content="Musical Neuron">
+<meta property="og:title" content="Modern...ish Vocational Testing">
+<meta property="og:url" content="https://cerebrock.github.io/posts/sKaPIng/">
+<meta property="og:description" content="sKPIng¶
+
+
+
+
+
+
+A really cool company contacted me to propose a data-business-analyst-lead job :D. So, I'd like to refresh the comercial aspect of the data world. For this I gathered a list of Key Perfo">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-11-14T00:00:00-03:00">
+<meta property="article:tag" content="business">
+<meta property="article:tag" content="scraping">
+</head>
+<body>
+    <a href="#page-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Inicio"><i class="fa fa-home"></i></a></li>
+            <li><a href="../../categories/index.html" title="Tags"><i class="fa fa-tags"></i></a></li>
+            <li><a href="../../pages/about/" title="Inicio"><i class="fa fa-user"></i></a></li>
+            <li><a href="https://github.com/cerebrock" title="Github"><i class="fab fa-github"></i></a></li>
+            <li><a href="../../archive/" title="Archives"><i class="fa fa-folder-open"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/matias-grinberg" title="About me"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/cerebrock/" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/Mati_G_" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+    
+    
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Modern...ish Vocational Testing</a></h1>
+
+        <div class="metadata">
+            <p class="dateline"><a href="." rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2019-11-14T00:00:00-03:00" itemprop="datePublished" title="14-11-2019 ">14-11-2019 </time></a></p>
+            <p class="byline author vcard"> <i class="fa fa-user"></i> <span class="byline-name fn" itemprop="author">
+                    MG
+            </span></p>
+                <p class="commentline"><i class="far fa-comment"></i>            <a href="#disqus_thread" data-disqus-identifier="cache/posts/kpis.html">Comments</a>
+
+
+                    </p>
+<p class="sourceline"><a href="index.ipynb" class="sourcelink"><i class="fa fa-file-code"></i> Source</a></p>
+
+            
+                <div class="tags">
+<h3 class="metadata-title">
+<i class="fa fa-tags"></i> Tags:</h3>
+        <ul itemprop="keywords" class="tags-ul">
+<li><a class="tag p-category" href="../../categories/business/" rel="tag">business</a></li>
+            <li><a class="tag p-category" href="../../categories/scraping/" rel="tag">scraping</a></li>
+        </ul>
+</div>
+
+        </div>
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="sKPIng">sKPIng<a class="anchor-link" href="#sKPIng">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A really cool company contacted me to propose a data-business-analyst-lead job :D. So, I'd like to refresh the comercial aspect of the data world. For this I gathered a list of <em>Key Performance Indicators</em> to use in practice problems, scrapping from a few websites using HTTP requests, Selenium, regular expressions and XPath.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">kpis</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">category</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">chrome</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">category</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">extra</span> <span class="o">=</span> <span class="n">chrome</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s1">'//div[@id="featured-snippet"]/ul'</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="n">extra</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">kpis</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">chrome</span><span class="o">.</span><span class="n">find_elements_by_xpath</span><span class="p">(</span><span class="s1">'//h3[@class="strong h4"]'</span><span class="p">)]</span> <span class="o">+</span> <span class="n">extra</span><span class="p">))</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>marketing
+sales
+saas-metrics
+digital-marketing
+social-media
+seo
+email-marketing
+financial
+devops
+supply-chain
+call-center
+healthcare
+support
+retail
+help-desk
+insurance
+ecommerce
+human-resources
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">sleep</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">defaultdict</span>
+
+<span class="c1">#!pip install fuzzywuzzy</span>
+<span class="kn">from</span> <span class="nn">fuzzywuzzy</span> <span class="k">import</span> <span class="n">fuzz</span>
+
+<span class="c1">#https://github.com/Cerebrock/utils/blob/master/init_chrome.py</span>
+<span class="kn">from</span> <span class="nn">init_chrome</span> <span class="k">import</span> <span class="n">init_chrome</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_regex</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">pattern</span><span class="p">):</span>
+    <span class="sd">"""Recieves url and regex search pattern."""</span>
+    <span class="n">resp</span> <span class="o">=</span> <span class="n">rq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> 
+                  <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">'User-Agent'</span><span class="p">:</span>
+                           <span class="s1">'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36'</span>
+                          <span class="p">}</span>
+                 <span class="p">)</span><span class="o">.</span><span class="n">text</span>
+    
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">resp</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">'https://www.accutraccapital.com/us/en/resources/blog/key-performance-indicators'</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'(\d{,2}\.\s[\w\-\s\(\)]+?):'</span>
+<span class="n">get_regex</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>['1. Profit',
+ '2. Revenue vs Target',
+ '3. Cost-per-Mile',
+ '4. Day Sales Outstanding (DSO)',
+ '5. Freight Claim',
+ '6. Equipment Utilization',
+ '7. Customer Lifetime Value (CLV)',
+ '8. Customer Acquisition Cost (CAC)',
+ '9. Driver Turnover Rate (DTR)',
+ '10. Employee Satisfaction']</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">'https://www.compudata.com/top-20-financial-kpis-every-cfo-dashboard-should-have'</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'(\d+\.[\w\s]+?)KPI'</span>
+<span class="n">get_regex</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">pattern</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>['1.Working Capital ',
+ '2.Operating Cash Flow ',
+ '3. Current Ratio ',
+ '4. Payroll Headcount Ratio ',
+ '5. Return on Equity ',
+ '7. Debt to Equity Ratio ',
+ '8. Accounts Payable Turnover ',
+ '9. Accounts Receivable Turnover ',
+ '10. Inventory Turnover ',
+ '11. Net Profit Margin ',
+ '12. Gross Profit Margin ',
+ '13. Finance Error Report ',
+ '14. Payment Error Rate ',
+ '15. Budget Variance ',
+ '16. Line Items in Budget ',
+ '17. Budget Creation Cycle Time ',
+ '18. Expense Management ',
+ '19. Internal Audit Cycle Time ',
+ '20. Customer Satisfaction ']</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Selenium">Selenium<a class="anchor-link" href="#Selenium">¶</a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">'https://www.klipfolio.com/resources/kpi-examples/'</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chrome</span> <span class="o">=</span> <span class="n">init_chrome</span><span class="p">(</span><span class="n">chrome_path</span><span class="o">=</span><span class="s1">'/home/matias/Matias/Programas Varios/Notebooks/chromedriver'</span><span class="p">,</span>
+                    <span class="n">headless</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">chrome</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">category_urls</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span><span class="o">.</span><span class="n">get_attribute</span><span class="p">(</span><span class="s1">'href'</span><span class="p">)</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">chrome</span><span class="o">.</span><span class="n">find_elements_by_xpath</span><span class="p">(</span><span class="s1">'//div[@class="card-column kpi-examples-categories__klip-cards col-md-4 col-xs-12"]//a[@href]'</span><span class="p">)]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># removing duplicates from dictionary with fuzzy string matching</span>
+
+<span class="n">seen</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">kpis2</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">]:</span>
+        <span class="n">pres</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">fuzz</span><span class="o">.</span><span class="n">token_sort_ratio</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">v</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">85</span><span class="p">:</span>    
+                <span class="c1">#print(f"{v}, {s}")</span>
+                <span class="n">pres</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">break</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">pres</span><span class="p">:</span>
+            <span class="n">kpis2</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+            <span class="n">seen</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pprint</span>
+
+<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">kpis2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>defaultdict(&lt;class 'list'&gt;,
+            {'call-center': ['Cost per Call',
+                             'Peak Hour Traffic (PHT)',
+                             'Sales per Agent',
+                             'Customer Satisfaction',
+                             'Call Volume',
+                             'Data Network Availability',
+                             'Call Arrival Rate',
+                             'Average Sales per Agent',
+                             'Average Handle Time',
+                             'Agent Utilization',
+                             'Longest Delay in Queue',
+                             'Cost per Contact',
+                             'Block Error Rate',
+                             'Longest Call Hold',
+                             'Longest Call Length',
+                             'Repeat Calls',
+                             'On-Hold Time',
+                             'After Call Work Time',
+                             'Telecom Subscriber Acquisition Cost',
+                             'Call Completion Rate',
+                             'Call Center Status Metrics',
+                             'Customer Calls Answered in the First Minute',
+                             'Interactions Routed Properly',
+                             'Call Resolution',
+                             'Blockage',
+                             'Call Setup Success Rate (CSSR)',
+                             'Time Lost Due to Technology Issues',
+                             'Agent Schedule Adherence',
+                             'Forecasted Contact Load to Actual Contact Load',
+                             'Callback Messaging',
+                             'Talk Time',
+                             'Dial per Hour',
+                             'Call Abandonment',
+                             'Active and Waiting Calls',
+                             'Service Level'],
+             'devops': ['Feature vs. Bug Investment Metric',
+                        'Project Burndown metric',
+                        'Release Tracker Metric',
+                        'Pingdom Last Error Metric',
+                        'Pingdom Checks Metrics'],
+             'digital-marketing': ['Returning visitors',
+                                   'Click thru rate',
+                                   'Website traffic leads',
+                                   'Online conversion rates'],
+             'ecommerce': ['Items per Order',
+                           'Unique Online Buyers',
+                           'Cost per Order',
+                           'Visits to Purchase',
+                           'Shopping Cart Sessions',
+                           'New Customer on First Visit',
+                           'Shopping Session Length',
+                           'Shopping Cart Conversion Rate',
+                           'Product Views per Session',
+                           'Revenue from Repeat Online Customers',
+                           'Shopping Carts Abandoned',
+                           'Revenue from New Visitors',
+                           'On-Time Delivery',
+                           'New Customers',
+                           'Revenue per Visitor',
+                           'Shipping Error Rate',
+                           'Order Value',
+                           'Returning Customers'],
+             'financial': ['Net cash flow',
+                           'Liquidity ratio',
+                           'Berry ratio',
+                           'Working Capital',
+                           'Profit and Loss Report',
+                           'Earnings before interest and taxes (EBIT)',
+                           'Days in accounts receivables',
+                           'Quick Ratio / Acid Test',
+                           'Recent Payments',
+                           'Contribution margin',
+                           'Interest cover',
+                           'Gross profit margin',
+                           'Income and Expenses (Last 12 Months)',
+                           'Vendor Expenses',
+                           'Return on Equity',
+                           'Accounts Receivable Turnover',
+                           'Current Accounts Receivable and Accounts Payable',
+                           'Debt to Equity Ratio',
+                           'Net Profit Margin',
+                           'Current Ratio',
+                           'Inventory Turnover',
+                           'Transactions error rate',
+                           'Economic value added (EVA)',
+                           'Accounts Payable Turnover'],
+             'healthcare': ['Lab Turnaround Time',
+                            'Number of Patients in ER',
+                            'ER Waiting Times',
+                            'Time to Healthcare Service',
+                            'Current ER Occupancy',
+                            'Average Length of Stay'],
+             'help-desk': ['Ticket Queue',
+                           'Ticket Analysis',
+                           'Agent Performance'],
+             'human-resources': ['Span of Control',
+                                 'Headcount',
+                                 'Open Job Requisitions',
+                                 'Job Offer Acceptance Rate',
+                                 'Cost per Hire',
+                                 'Signing Bonus Expense',
+                                 'Ethnic Diversity Ratio',
+                                 'Gender Ratio',
+                                 'Recruiter to Open Requisitions Ratio',
+                                 'Applications Received per Vacancy'],
+             'insurance': ['Quotas vs. Production',
+                           'Claims Ratio',
+                           'Policy Sales Growth',
+                           'Top Brokers in Sales Revenue',
+                           'Average Cost Per Claim',
+                           'Net Income Ratio',
+                           'Average Time to Settle a Claim',
+                           'Percentage of Sales Growth'],
+             'marketing': ['Customer Share by Category',
+                           'Lifetime value of a customer (LTV)',
+                           'Keyword Click-Through Rate',
+                           'Response Rate',
+                           'Organic Search Traffic for SEO Optimization',
+                           'Social Sentiment',
+                           'Return on marketing investment',
+                           'Instagram Followers',
+                           'Purchase Funnel',
+                           'Social Visits and Leads',
+                           'Facebook Ads Campaign Performance',
+                           'Keyword Performance',
+                           'Followers Growth KPI',
+                           'Facebook Likes',
+                           'Key Social Metrics',
+                           'Referral Traffic',
+                           'Facebook Ads CPM and CPP (last 7 days)',
+                           'First Visit Metric',
+                           'Email Marketing Statistics',
+                           'Click Through Rate (CTR)',
+                           'People Talking About This on Facebook Metric',
+                           'Social Shares',
+                           'Marketing Qualified Leads (MQL)',
+                           'Web Traffic Sources',
+                           'Landing Page Performance Optimization',
+                           'Unique Visitors',
+                           'Customer acquisition cost (CAC)',
+                           'End Action Rate',
+                           'Marketing Originated Customers',
+                           'Unsubscribes',
+                           'Net Promoter Score',
+                           'Twitter Engagement Metrics',
+                           'Email Subscribers Metrics',
+                           'Marketing spend per customer',
+                           'Email Forwards',
+                           'Email Marketing Engagement Score',
+                           'Top Viewed Posts',
+                           'SEO Keyword Ranking',
+                           'Average Time on Page',
+                           'External Website Links',
+                           'Sessions by Device Type',
+                           'Newsletter Signup Conversion Rate',
+                           'Customer retention',
+                           'Social Traffic and Conversions',
+                           'Funnel Conversion Rate',
+                           'New Leads Generated',
+                           'Facebook Ads Impressions and Reach (last 7 days)',
+                           'Content Downloads',
+                           'Pageviews per Session',
+                           'Social Events',
+                           'Customer Attrition',
+                           'Brand awareness',
+                           'Web Traffic Concentration',
+                           'SEO Traffic',
+                           'Domain Authority',
+                           'Website Traffic Lead Ratio',
+                           'Total Visits',
+                           'Sales Qualified Leads (SQL)',
+                           'Average Lead Score',
+                           'Customer engagement',
+                           'Email Website Traffic Metrics',
+                           'Facebook Page Like Metric',
+                           'Facebook Engagement Metrics',
+                           'Social Interactions',
+                           'Returning Visitor Metric',
+                           'Cost Per Lead',
+                           'YouTube Channel Subscribers',
+                           "Facebook Ads Today's Summary",
+                           'Lead Conversion Rate',
+                           'Facebook Page Demographics',
+                           'New Followers',
+                           'Goal Completion Rate',
+                           'Social Followers',
+                           'Dormancy Rate',
+                           'Content Backlog',
+                           'Average Time to New Content',
+                           'Keyword Opportunity',
+                           'Link Building Metrics',
+                           'Twitter Followers Metric',
+                           'Incremental Sales',
+                           'Bounce Rate',
+                           'Lifetime Value: Customer Acquisition Cost '
+                           '(LTV:CAC)',
+                           'Online Conversions Metric',
+                           'Cost per Action (CPA)',
+                           'Pageviews',
+                           'Brand Awareness Metric'],
+             'retail': ['Stock rotations',
+                        'Point of Purchase',
+                        'Stock value',
+                        'Cost of Goods Sold',
+                        'Frequency of store visits',
+                        'Same store sales growth',
+                        'Product shelf-space profitability',
+                        'Sales by product category',
+                        'Sales per unit area (ex. per SQFT)',
+                        'Sales per Square Foot'],
+             'saas-metrics': ['Quick Ratio',
+                              'Monthly Recurring Revenue (MRR) Expansion Rate',
+                              'Customer Churn Rate',
+                              'Monthly Recurring Revenue (MRR)',
+                              'Net Burn Rate',
+                              'MoM MRR Growth',
+                              'Viral Coefficient'],
+             'sales': ['Selling Opportunity',
+                       'Unit Sales to Average Market Unit Sales',
+                       'Conversation to Appointment Rate',
+                       'Monthly Sales Bookings',
+                       'Average New Deal Size/Length',
+                       'Revenue to Average Market Sales Revenue Ratio',
+                       'Monthly Sales Growth',
+                       'Promotions Conducted',
+                       'Baseline Sales',
+                       'Sales Growth by Market Segment',
+                       'Sales Closing Ratio',
+                       'Revenue Gained from Top Customers',
+                       'Monthly Calls (or emails) Per Sales Rep',
+                       'Sales Conversion Rate',
+                       'Sales Per Rep',
+                       'Sales by Region',
+                       'Average Profit Margin',
+                       'Average Cost Per Lead',
+                       'Average Purchase Value',
+                       'Customer Acquisition',
+                       'Sales Bookings',
+                       'Sales by Department',
+                       'Adjusted Trial Rate',
+                       'Sales Orders Filled per FTE (Full Time Equivalent)',
+                       'Gross Margin Return on Investment (GMROI)',
+                       'Sales Growth Metrics and KPIs',
+                       'Revenue per Successful Call',
+                       'Percent Closing Ratio',
+                       'Lead-to-Sale %',
+                       'Sales Orders Filled per unit Time',
+                       'Sell-Through Rate',
+                       'Sales Turnover',
+                       'Time to Break Even',
+                       'Potential New Clients Contacted',
+                       'Sales Quota Attainment',
+                       'Number of Monthly Onboarding and Demo Calls',
+                       'Missed Sales Opportunities',
+                       'Sales Value Productivity',
+                       'Average Conversion Time',
+                       '% Markdown Goods',
+                       'Product Performance',
+                       'Retention and Churn Rates',
+                       'Coupon Conversion',
+                       'Sales Revenue per Hour',
+                       'Repurchases of Services Following Project Completion',
+                       'Sales by Contact Method',
+                       'Trial Accounts',
+                       'Cannibalization rate in sales and marketing',
+                       'Channel Margin',
+                       'Leads Generated by Agents',
+                       'Orders Cancelled by Reason',
+                       'First Appointment-to-Sales Ratio',
+                       'Customer Lifetime Value',
+                       'Order Frequency',
+                       'Sales-to-Date',
+                       'Percent of Revenue from New Products',
+                       'Sales Cycle Duration',
+                       'Quote To Close Ratio',
+                       'Sales Opportunities',
+                       'Selling Costs to Sales Ratio',
+                       'New and Expansion MRR',
+                       'Sales Force Effectiveness',
+                       'Successful to Unsuccessful Tenders',
+                       'Activated New Business Value',
+                       'Potential Revenue in the Sales Pipeline',
+                       'Purchase Frequency',
+                       'Sales Target',
+                       'Product-Line Profitability',
+                       'Repeat Purchase Volume'],
+             'social-media': ['Web visitors from social channel',
+                              'Likes',
+                              'Engagement',
+                              'Social visitors conversion rates',
+                              'Traffic conversions',
+                              'Social visitor goals'],
+             'supply-chain': ['Inventory to Sales Ratio',
+                              'Rate of Return',
+                              'Back Order Rate',
+                              'Perfect Order Rate',
+                              'Carrying Cost of Inventory',
+                              'Order Status',
+                              'Units Per Transaction',
+                              'Inventory Accuracy',
+                              'Order Tracking',
+                              'Percentage of Out of Stock Items'],
+             'support': ['Queries Resolved in the Same Day',
+                         'Customer Service Representatives (CSR) Occupancy',
+                         'Correspondence Replied to On Time',
+                         'Speed of Answer (SA)',
+                         'Overdue Service Requests',
+                         'Complaints Received',
+                         'Time From Inquiry to Response',
+                         'Time to Resolve Complaints',
+                         'Timeliness of Issue Resolution',
+                         'Customer Complaints Due to Poor Service or Product '
+                         'Quality',
+                         'Support Requests',
+                         'Customer Satisfaction with Service Levels',
+                         'Complaints Not Resolved on First Call',
+                         'Complaints Resolved']})
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'kpis.json'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">kpis2</span><span class="p">,</span> <span class="n">out</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="next">
+                <a href="../Some%20audio%20viz/" rel="next" title="Spectral Playground">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="musicalneuron",
+            disqus_url="https://cerebrock.github.io/posts/sKaPIng/",
+        disqus_title="Modern...ish Vocational Testing",
+        disqus_identifier="cache/posts/kpis.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
+        </script></article><script>var disqus_shortname="musicalneuron";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p>Contents © 2019         <a href="mailto:mtsgrinberg@gmail.com">Matías Grinberg</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../../assets/js/all-nocdn.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">
+<img src="https://www.searchpng.com/wp-content/uploads/2019/02/Share-icon-715x715.png" width="32" height="32" border="0" alt="Share" style="margin-right:9pt">
+Share
+</a>
+ <ul>
+<li>
+<a class="addthis_button_facebook">Facebook</a>
+ </li>
+<li>
+<a class="addthis_button_twitter">Twitter</a>
+ </li>
+<li>
+<a class="addthis_button_linkedin">Linkedin</a>
+ </li>
+<li>
+<a class="addthis_button_whatsapp">Whatsapp</a>
+ </li>
+</ul>
+</div>
+ <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(2, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-151873836-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151873836-1');
+</script>
+</body>
+</html>
