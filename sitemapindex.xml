@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://cerebrock.github.io/categories/applied.xml</loc>
-  <lastmod>2019-11-14T03:26:00Z</lastmod>
+  <lastmod>2019-11-17T23:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/audio.xml</loc>
@@ -15,15 +15,11 @@
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/business.xml</loc>
-  <lastmod>2019-11-14T05:10:00Z</lastmod>
+  <lastmod>2019-11-14T06:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/espanol.xml</loc>
   <lastmod>2019-11-14T03:26:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://cerebrock.github.io/categories/math.xml</loc>
-  <lastmod>2019-11-14T05:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/music.xml</loc>
@@ -31,7 +27,7 @@
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/psychology.xml</loc>
-  <lastmod>2019-11-14T03:26:00Z</lastmod>
+  <lastmod>2019-11-17T23:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/categories/scraping.xml</loc>
@@ -39,14 +35,14 @@
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/galleries/rss.xml</loc>
-  <lastmod>2019-11-09T18:31:00Z</lastmod>
+  <lastmod>2019-11-14T06:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/rss.xml</loc>
-  <lastmod>2019-11-14T05:10:00Z</lastmod>
+  <lastmod>2019-11-17T23:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://cerebrock.github.io/sitemap.xml</loc>
-  <lastmod>2019-11-14T05:10:00Z</lastmod>
+  <lastmod>2019-11-17T23:29:00Z</lastmod>
  </sitemap>
 </sitemapindex>
